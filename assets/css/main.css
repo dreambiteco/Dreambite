@@ -808,12 +808,12 @@ section,
     display: inline-block;
     overflow: visible;
     text-shadow: 0 4px 6px rgb(255, 4, 255), 0 6px 20px rgba(255, 0, 204, 0.5); /* Initial glow */
-    animation: glow 1.5s infinite alternate;  /* Animation on the glow */
+    animation: glow 2s infinite alternate;  /* Animation on the glow */
   }
   
   @keyframes glow {
     0% {
-      text-shadow: 0 4px 6px rgb(255, 1, 255), 0 6px 20px rgba(255, 0, 225, 0.3); /* Dim glow */
+      text-shadow: 0 4px 6px rgb(123, 3, 123), 0 6px 20px rgba(255, 0, 225, 0.3); /* Dim glow */
     }
     100% {
       text-shadow: 0 4px 6px rgb(255, 0, 255), 0 6px 20px rgba(255, 0, 230, 0.7); /* Intense glow */
