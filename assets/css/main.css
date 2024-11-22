@@ -793,15 +793,30 @@ section,
 }
 
 .hero h2 .underlight {
-  position: relative;
-  z-index: 1;
-  padding: 0 5px;
-  display: inline-block;
+    font-size: 33px;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    text-shadow: 0 4px 6px rgb(255, 4, 255), 0 6px 20px rgba(255, 0, 204, 0.5); /* Initial glow */
+    animation: glow 1.5s infinite alternate;  /* Animation on the glow */
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 4px 6px rgb(255, 1, 255), 0 6px 20px rgba(255, 0, 225, 0.3); /* Dim glow */
+    }
+    100% {
+      text-shadow: 0 4px 6px rgb(255, 0, 255), 0 6px 20px rgba(255, 0, 230, 0.7); /* Intense glow */
+    }
+  }
+  
 }
 
 .hero h2 .underlight:before {
   content: "";
-  position: absolute;
+  position: relative;
   height: 50%;
   bottom: 0;
   left: 0;
