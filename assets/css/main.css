@@ -210,7 +210,7 @@ h6 {
   }
 
   .header .logo i {
-    font-size: 20px;
+    font-size: 50px;
   }
 
   .header .header-social-links {
@@ -677,7 +677,7 @@ h6 {
 }
 
 .page-title .heading h1 {
-  font-size: 64px;
+  font-size: 75px;
   font-weight: 400;
 }
 
@@ -753,7 +753,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   padding: 0;
   line-height: 1px;
@@ -923,6 +923,10 @@ section,
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+.enlarge-image {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Maintain aspect ratio */
 }
 
 /*--------------------------------------------------------------
@@ -1410,6 +1414,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-
-}
