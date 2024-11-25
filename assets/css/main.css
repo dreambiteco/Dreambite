@@ -28,9 +28,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #000000; /* Background color for the entire website, including individual sections */
-  --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #9120c5; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #b93ff2; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -55,7 +55,7 @@
 .dark-background {
   --background-color: #060606;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #ce2afb;
   --surface-color: #252525;
   --contrast-color: #ffffff;
 }
@@ -68,8 +68,37 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+.creative-original {
+  display: flex; /* Use flexbox to place children side by side */
+  gap: 2rem; /* Add spacing between columns */
+}
+
+.column {
+  flex: 1; /* Equal width for both columns */
+}
+
+.column b {
+  display: block; /* Ensure the bold title starts on a new line */
+  margin-bottom: 1rem; /* Add spacing below the title */
+}
+
+.accent {
+  color: var(--heading-color); /* Apply accent color to the roles */
+  font-weight: bold; /* Optional: Make the roles bold */
+}
+
+.column i {
+  color: inherit; /* Ensure the italic text (names) adopts the default or accent color */
+  font-style: italic; /* Italicize the names */
+}
+
+.column span {
+  display: inline-block; /* Allow the span to be inline but block-like */
+}
+
+
 body {
-  color: var(--default-color);
+  color: var(--accent-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
@@ -151,7 +180,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
+  color: var(--accent-color);
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
@@ -210,7 +239,7 @@ h6 {
   }
 
   .header .logo i {
-    font-size: 20px;
+    font-size: 50px;
   }
 
   .header .header-social-links {
@@ -677,7 +706,7 @@ h6 {
 }
 
 .page-title .heading h1 {
-  font-size: 64px;
+  font-size: 75px;
   font-weight: 400;
 }
 
@@ -688,8 +717,8 @@ h6 {
   font-size: 14px;
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 40px;
-  border-radius: 4px;
+  padding: 10px 45px;
+  border-radius: 20px;
   transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -753,7 +782,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   padding: 0;
   line-height: 1px;
@@ -852,7 +881,7 @@ section,
   font-size: 14px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 4px;
+  border-radius: 50px;
   transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -923,6 +952,10 @@ section,
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+.enlarge-image {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Maintain aspect ratio */
 }
 
 /*--------------------------------------------------------------
@@ -1410,6 +1443,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-
-}
