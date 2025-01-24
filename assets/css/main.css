@@ -12,13 +12,13 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: .viaoda-libre-regular {
-    font-family: "Viaoda Libre", serif;
+  --default-font: .merriweather {
+    font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
   }  
-  --heading-font: .viaoda-libre-regular {
-    font-family: "Viaoda Libre", serif;
+  --heading-font: .merriweather {
+    font-family: "Merriweather", serif;
     font-style: normal;
   }
   
@@ -848,8 +848,7 @@ section,
       text-shadow: 0 4px 6px rgb(255, 0, 255), 0 6px 20px rgba(255, 0, 230, 0.7); /* Intense glow */
     }
   }
-  
-}
+
 
 .hero h2 .underlight:before {
   content: "";
