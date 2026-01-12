@@ -145,6 +145,7 @@
 <section class="consumed-info" style="background-color: #000000; color: #fff; padding: 80px 0;">
   <div class="container">
     <div class="row align-items-center">
+      
       <!-- Text Column -->
       <div class="col-lg-6 col-md-12" data-aos="fade-up" style="padding-right: 30px;">
         <p style="font-size: 1.2rem; line-height: 1.8;">
@@ -154,8 +155,8 @@
       </div>
       
       <!-- Video Column -->
-      <div class="col-lg-6 col-md-12 text-center" data-aos="fade-up" data-aos-delay="100" style="padding-left: 100px;">
-        <video width="100%" height="auto" controls style="max-height: 400px; border-radius: 10px;">
+      <div class="col-lg-6 col-md-12 text-center video-column" data-aos="fade-up" data-aos-delay="100">
+        <video class="responsive-video" controls>
           <source src="assets/img/gallery/Trailer w: Subtitles.mov" type="video/mp4">
         </video>
         <div class="container">
@@ -163,9 +164,16 @@
             <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
               <a href="contact.html" class="btn-get-started">Contact us for the full play recording!<br></a><br>
             </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
+
+<style
+
 
  
               
@@ -228,8 +236,7 @@
 
             
             <div class="row align-items-center">
-              <!-- Text Column -->
-           <!-- Text Column -->
+<!-- Text Column -->
 <div class="col-lg-6 col-md-12" data-aos="fade-up">
   <p style="font-size: 1.2rem; line-height: 1.8;">
     Made of three short plays, it has a through line of a woman descending further and further away from the real, and getting closer to her own body as a result. It originated by the three members of the collective writing a short piece in response to the prompt ‘altered states of mind’ that we brought together into a show known as INSATIABLE (previously CONSUMED).
@@ -246,28 +253,39 @@
   </p>
 </div>
 
-        
-              <!-- Image Column -->
 <!-- Image Column -->
-<div class="col-lg-6 col-md-3 position-relative overflow-visible text-end"
-     data-aos="fade-up" data-aos-delay="100">
-
+<div class="col-lg-6 col-md-12 position-relative text-end" data-aos="fade-up" data-aos-delay="100">
   <img 
     src="assets/img/gallery/consumed.png" 
     alt="Consumed Plays Image"
-    class="rounded shadow-lg"
-    style="
-      width: 140%;
-      max-width: none;
-      height: auto;
-      max-height: 800px;
-      transform: translateX(5%);
-      object-fit: cover;
-    "
+    class="responsive-image rounded shadow-lg"
   >
 </div>
-</div>
-</div>
+
+<style>
+/* Desktop positioning */
+.responsive-image {
+  width: 140%;
+  max-width: none;
+  height: auto;
+  max-height: 800px;
+  transform: translateX(5%);
+  object-fit: cover;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 991px) { /* Bootstrap md breakpoint */
+  .responsive-image {
+    width: 100%;           /* Full width of its column */
+    max-width: 100%;
+    height: auto;          /* Keeps aspect ratio */
+    transform: translateX(0); /* Reset translation */
+    object-fit: contain;   /* Prevent cropping */
+    margin: 0 auto;        /* Center the image */
+    display: block;
+  }
+}
+</style>
 </section>
  
 <!-- Full-Width Gallery Section -->
@@ -327,49 +345,54 @@
 
                               
         <!-- Creative Team Section -->
-<section class="section" data-aos="fade-up">
+<<section class="section" data-aos="fade-up">
   <div class="container-fluid" style="padding: 80px 40px; background-color: #000000; color: #fff;">
     
     <div class="row justify-content-center">
-      <!-- This controls how wide the whole block is -->
       <div class="col-lg-8">
 
         <div class="row justify-content-between">
 
-          <div class="row justify-content-between">
-
-            <!-- Creative Team (shifted toward centre) -->
-            <div class="col-lg-5 offset-lg-1">
-              <b style="font-size: 1.4rem; display: block; margin-bottom: 20px;">CREATIVE TEAM</b>
-              <span class="accent">Writer / Producer</span> – <i>Lydia Sabatini</i><br>
-              <span class="accent">Writer / Producer</span> – <i>Katrina Bennett</i><br>
-              <span class="accent">Writer / Producer</span> – <i>Clare Stenning</i><br>
-              <span class="accent">Director</span> – <i>Nell Bailey</i><br>
-              <span class="accent">Associate Director</span> – <i>Holly Cicely Gibson</i><br>
-              <span class="accent">Associate Producer</span> – <i>Brandon Sanchez</i><br>
-              <span class="accent">Sound Design / Intimacy Coordinator</span> – <i>Lilly Butcher</i><br>
-              <span class="accent">Light Design</span> – <i>Zazi the Artist</i><br>
-              <span class="accent">Set Design</span> – <i>Sasha Abela</i><br>
-              <span class="accent">Stage Manager</span> – <i>Sapphire Shoferpoor</i>
-            </div>
-          
-            <!-- Original Cast (unchanged position) -->
-            <div class="col-lg-5">
-              <b style="font-size: 1.4rem; display: block; margin-bottom: 20px;">ORIGINAL CAST</b>
-              <span class="accent">NAOMI</span> – <i>Nusrath Tapadar</i><br>
-              <span class="accent">JUNE / MABEL</span> – <i>Sophia Decaro</i><br>
-              <span class="accent">COACH / RUBEN</span> – <i>Hugo Papiernik</i><br>
-              <span class="accent">IZZY / WOMAN</span> – <i>Clare Stenning</i>
-            </div>
-          
+          <!-- Creative Team (shifted toward centre) -->
+          <div class="col-lg-5 offset-lg-1 mb-4 mb-lg-0">
+            <b style="font-size: 1.4rem; display: block; margin-bottom: 20px;">CREATIVE TEAM</b>
+            <span class="accent">Writer / Producer</span> – <i>Lydia Sabatini</i><br>
+            <span class="accent">Writer / Producer</span> – <i>Katrina Bennett</i><br>
+            <span class="accent">Writer / Producer</span> – <i>Clare Stenning</i><br>
+            <span class="accent">Director</span> – <i>Nell Bailey</i><br>
+            <span class="accent">Associate Director</span> – <i>Holly Cicely Gibson</i><br>
+            <span class="accent">Associate Producer</span> – <i>Brandon Sanchez</i><br>
+            <span class="accent">Sound Design / Intimacy Coordinator</span> – <i>Lilly Butcher</i><br>
+            <span class="accent">Light Design</span> – <i>Zazi the Artist</i><br>
+            <span class="accent">Set Design</span> – <i>Sasha Abela</i><br>
+            <span class="accent">Stage Manager</span> – <i>Sapphire Shoferpoor</i>
           </div>
-          
+
+          <!-- Original Cast (unchanged position) -->
+          <div class="col-lg-5">
+            <b style="font-size: 1.4rem; display: block; margin-bottom: 20px;">ORIGINAL CAST</b>
+            <span class="accent">NAOMI</span> – <i>Nusrath Tapadar</i><br>
+            <span class="accent">JUNE / MABEL</span> – <i>Sophia Decaro</i><br>
+            <span class="accent">COACH / RUBEN</span> – <i>Hugo Papiernik</i><br>
+            <span class="accent">IZZY / WOMAN</span> – <i>Clare Stenning</i>
+          </div>
+
+        </div>
 
       </div>
     </div>
 
   </div>
 </section>
+
+<style>
+/* Ensure space between stacked columns on mobile */
+@media (max-width: 991px) {
+  .col-lg-5.mb-4 {
+    margin-bottom: 30px !important; /* adds space below first column */
+  }
+}
+</style>
 
 
 
