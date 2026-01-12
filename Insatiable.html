@@ -104,21 +104,42 @@
 
       <!-- Page Title -->
 <!-- Page Title -->
-<section class="hero-title" style="
+<section class="hero-title">
+  <h1>INSATIABLE</h1>
+  <p>
+    A woman who can’t get enough.<br>
+    Of gummies<br>
+    Of wet dreams<br>
+    Of Herself.
+  </p>
+</section>
+
+<style>
+.hero-title {
   background-image: url('assets/img/gallery/Poster-image.png');
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 150px 20px; /* small side padding for phones */
   text-align: center;
   color: #fff;
-  border-radius: 50px 50px 50px 50px; /* top-left, top-right, bottom-right, bottom-left */
-  overflow: hidden; /* ensures the rounded corners clip the background */
-">
-  <h1 style="font-size: 6rem; font-weight: 900;">INSATIABLE</h1>
-  <p style="font-size: 1.5rem; margin-top: 20px;">
-    A woman who can’t get enough.<br>Of gummies<br>Of wet dreams<br>Of Herself.
-  </p>
-</section>
+  border-radius: 50px; 
+  overflow: hidden;
+}
+
+/* Main title */
+.hero-title h1 {
+  font-weight: 900;
+  font-size: clamp(3rem, 10vw, 8rem); /* Responsive font size: min 3rem, max 8rem */
+  margin: 0;
+}
+
+/* Subtitle */
+.hero-title p {
+  font-size: clamp(1rem, 3vw, 2rem); /* Scales between 1rem and 2rem */
+  margin-top: 20px;
+  line-height: 1.5;
+}
+</style>
 
 
 <section class="consumed-info" style="background-color: #000000; color: #fff; padding: 80px 0;">
