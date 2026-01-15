@@ -89,6 +89,11 @@
   font-weight: bold;
 }
 
+.cruising-page #navmenu li.active > a span {
+  color: #13b0ab;
+  font-weight: bold;
+}
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
