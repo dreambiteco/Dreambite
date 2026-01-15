@@ -84,6 +84,10 @@
   --nav-dropdown-hover-color: #13b0ab;
 }
 
+#navmenu li.active > a span {
+  color: #ce2afb;
+  font-weight: bold;
+}
 
 
 /*--------------------------------------------------------------
