@@ -1470,7 +1470,7 @@ section,
 }
 
 /* ================================
-   Mobile-Safe Vertical Poster Grid
+   Vertical Poster Project Grid
 ================================ */
 
 .project-poster {
@@ -1479,6 +1479,7 @@ section,
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 /* Poster frame */
@@ -1486,31 +1487,32 @@ section,
   aspect-ratio: 2 / 3;
   width: 100%;
   background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Image handling */
 .poster-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* full poster always visible */
+  object-fit: contain; /* show full poster */
+  transition: transform 0.5s ease;
 }
 
 /* Overlay */
 .poster-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0,0,0,0.45);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Text */
 .poster-overlay h3 {
   color: #fff;
   font-size: 26px;
@@ -1519,28 +1521,29 @@ section,
 }
 
 .poster-overlay span {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,0.8);
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-/* Desktop hover */
+/* Hover effect - desktop only */
 @media (hover: hover) {
+  .project-poster:hover .poster-image img {
+    transform: scale(1.05);
+  }
+
   .project-poster:hover .poster-overlay {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Mobile behavior: overlay always visible */
+/* Mobile - overlay always visible at bottom */
 @media (max-width: 767px) {
   .poster-overlay {
     opacity: 1;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-    );
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
     align-items: flex-start;
     justify-content: flex-end;
     padding: 16px;
@@ -1552,6 +1555,10 @@ section,
 
   .poster-overlay span {
     font-size: 12px;
+  }
+
+  .poster-image img {
+    transform: none;
   }
 }
 
