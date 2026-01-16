@@ -1469,6 +1469,73 @@ section,
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
 }
 
+/* ================================
+   Vertical Poster Project Grid
+================================ */
+
+.project-poster {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.poster-image {
+  aspect-ratio: 2 / 3; /* poster ratio */
+  width: 100%;
+}
+
+.poster-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* SHOW FULL POSTER */
+  background-color: #000;
+  transition: transform 0.6s ease;
+}
+
+.poster-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.poster-overlay h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.poster-overlay span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-poster:hover .poster-image img {
+  transform: scale(1.04);
+}
+
+.project-poster:hover .poster-overlay {
+  opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .poster-image {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

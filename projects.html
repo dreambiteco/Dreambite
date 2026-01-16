@@ -1,27 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Projects</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dreambite Collective – Projects</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- You can paste your existing header/nav here for consistency -->
+<body class="gallery-page">
 
-  <main class="main">
-    <section class="hero-title">
-      <h1>Projects</h1>
-      <p>Select a project below.</p>
-    </section>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-    <section class="projects-list">
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="assets/img/logo-ugly.png" alt="">
+      <h1 class="sitename">Dreambite Co</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="Insatiable.html">Insatiable</a></li>
-        <li><a href="Cruising.html">Cruising</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li class="dropdown active">
+          <a href="projects.html"><span>Projects ▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Insatiable.html">Insatiable</a></li>
+            <li><a href="Cruising.html">Cruising</a></li>
+          </ul>
+        </li>
+
+        <li><a href="Community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
-  </main>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="https://x.com/DreambiteCo"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.instagram.com/dreambiteco/"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
+<main class="main">
+
+  <!-- ======= Page Title ======= -->
+  <section class="section">
+    <div class="container">
+  
+      <div class="row gy-4">
+  
+        <!-- Insatiable Poster -->
+        <div class="col-lg-6 col-md-6">
+          <a href="Insatiable.html" class="project-poster">
+            <div class="poster-image">
+              <img src="assets/img/gallery/Poster.png" alt="Insatiable Poster">
+            </div>
+            <div class="poster-overlay">
+              <h3>Insatiable</h3>
+              <span>View Project</span>
+            </div>
+          </a>
+        </div>
+  
+        <!-- Cruising Poster -->
+        <div class="col-lg-6 col-md-6">
+          <a href="Cruising.html" class="project-poster">
+            <div class="poster-image">
+              <img src="assets/img/gallery/cruising/Omnibus Poster.jpg" alt="Cruising Poster">
+            </div>
+            <div class="poster-overlay">
+              <h3>Cruising</h3>
+              <span>View Project</span>
+            </div>
+          </a>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+  
+  
+</main>
+
+<!-- Vendor JS -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
