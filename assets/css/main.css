@@ -67,7 +67,7 @@
 
 /* Page-specific theme overrides */
 .cruising-page {
-  --background-color: #fdfdfd;      /* main page background */
+  --background-color: #ffffff;      /* main page background */
   --default-color: #000000;         /* body text */
   --heading-color: #111111;         /* titles */
   --surface-color: #f0f0f0;         /* boxes & cards */
@@ -85,7 +85,7 @@
 }
 
 #navmenu li.active > a span {
-  color: #ce2afb;
+  color: #ffffff;
   font-weight: bold;
 }
 
