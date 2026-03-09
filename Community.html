@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Dreambite Collective - Community</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -51,15 +51,23 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" class="active">About</a></li>
           <li class="dropdown">
-            <a href="/projects/">Projects ▾</a>
+            <a href="projects.html">Projects ▾</a>
             <ul class="dropdown-menu">
-              li><a href="Insatiable.html"><span>Insatiable</span></a>
-          <li><a href="Cruising.html">Cruising</a></li>
+              <li><a href="Insatiable.html">Insatiable</a></li>
+              <li><a href="Cruising.html">Cruising</a></li>
+            </ul>
+          </li>          
+          <li class="dropdown active">
+            <a href="projects.html"><span>Community ▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="workshops.html">Workshops</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="readings.html">Rehearsed Readings</a></li>
             </ul>
           </li>
-          <li><a href="Community.html" class="active">Community</a></li>
+  
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -79,79 +87,114 @@
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 style="color: #e8a4ff;"><b>Community</b></h1>
-              <p class="mb-0">As a queer, female, non-hierarchical collective, we are committed to fostering community through creativity and inclusivity. We aim to run dynamic workshops that empower participants to explore self-expression, build connections and tell their stories through the transformative power of theatre.</p><br><br>
-              <a href="contact.html" class="cta-btn">Get in Touch<br></a> 
-              <br><br>
-            </div>
-    </div><!-- End Page Title -->
-
- <!-- Community Section -->
- <style>
-  /* Center the entire section within the page */
-
-  /* Ensuring the content inside each column is centered */
-  .service-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-      border: 1px solid #000000; /* Optional: For visibility of sections */
-      border-radius: 50px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Center the icons */
-  .icon {
-      font-size: 48px; /* Adjust icon size */
-      margin-bottom: 15px;
-  }
-</style> 
-</head>
-<body>
-  <section id="community" class="community section">
-
-    <div class="container">
-      <div class="row d-flex justify-content-center text-center">
-        <div class="col-lg-5">
-      <div class="row d-flex justify-content-center text-center">
-        <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="(5)">
-          <div class="service-item position-relative">
-            <div class="icon"><i class="bi bi-pencil"></i></div>
-            <h4><a href="" class="stretched-link">Workshops</a></h4>
-            <p>Coming Soon...</p>
+  
+          <h1 style="color:#e8a4ff; text-align:center;"><b>Community</b></h1>
+  
+          <p style="text-align: justify; max-width: 900px; margin: auto;">
+            We are a creative organisation working at the intersection of performance,
+            social dialogue, and community engagement. 
+            <br>
+            <br>As a queer, female,
+            non-hierarchical collective, we are committed to fostering community
+            through creativity and inclusivity. We develop bold and innovative
+            artistic work alongside community programmes that bring together
+            artists, researchers and public audiences to explore urgent social
+            questions. Our work focuses particularly on themes such as the climate,
+            queer and gender identity, and mental health. 
+            <br>
+            <br>
+            Through performances,
+            workshops, and public events, Dreambite aims to create spaces where
+            creative practice becomes a tool for reflection, dialogue, and community.
+          </p>
+  
+          <div style="text-align:center; margin-top:20px;">
+            <a href="contact.html" class="cta-btn">Get in Touch</a>
           </div>
-        </div><!-- End Service Item -->
-
-        <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="5">
-          <div class="service-item position-relative">
-            <div class="icon"><i class="bi bi-balloon"></i></div>
-            <h4><a href="" class="stretched-link">Events</a></h4>
-            <p>Coming Soon...</p>
-          </div>
-        </div><!-- End Service Item -->
-
-        <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="5">
-          <div class="service-item position-relative">
-            <div class="icon"><i class="bi bi-book"></i></div>
-            <h4><a href="" class="stretched-link">Readings</a></h4>
-            <p>Rehearsed Reading at Omnibus Theatre
-              "CRUISING" by Katrina Bennett</p>
-              <a href="about.html" class="btn-get-started">Book Here<br></a>
-
-          </div>
-        </div><!-- End Service Item -->
-
+  
+        </div>
       </div>
-
     </div>
-
-  </section><!-- /Community Section -->
-
+    <!-- End Page Title -->
+  
+  </main>
+  
+  
+    <!-- Community Hub Section -->
+    <section id="community" class="community section">
+  
+      <div class="container">
+  
+        <div class="row gy-4 justify-content-center text-center">
+  
+          <!-- Readings -->
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+            <div class="service-item position-relative">
+  
+              <div class="icon">
+                <i class="bi bi-book"></i>
+              </div>
+  
+              <h4>Rehearsed Readings</h4>
+  
+              <p>
+                Explore past and upcoming rehearsed readings featuring new
+                and emerging queer and female writing.
+              </p>
+  
+              <a href="readings.html" class="stretched-link"></a>
+  
+            </div>
+          </div>
+  
+  
+          <!-- Workshops -->
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+  
+              <div class="icon">
+                <i class="bi bi-pencil"></i>
+              </div>
+  
+              <h4>Workshops</h4>
+  
+              <p>
+                Collaborative workshops designed to support
+                creativity, storytelling and community building.
+              </p>
+  
+              <a href="workshops.html" class="stretched-link"></a>
+  
+            </div>
+          </div>
+  
+  
+          <!-- Events -->
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+  
+              <div class="icon">
+                <i class="bi bi-people"></i>
+              </div>
+  
+              <h4>Events</h4>
+  
+              <p>
+                Festivals, performances and community events that bridges the arts and other topics.
+              </p>
+  
+              <a href="events.html" class="stretched-link"></a>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+    <!-- End Community Hub Section -->
+  
   </main>
 
   <footer id="footer" class="footer">
